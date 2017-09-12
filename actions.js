@@ -1,4 +1,4 @@
-// Actions describe the fact that something happened.
+// Actions describe the "type" of "verb" (i.e. action kind) that has happened.
 // Reduce specifies how the application state changes in response of the reducer
 
 // Users
