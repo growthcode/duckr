@@ -1,12 +1,7 @@
 import firebase from 'firebase'
+import { firebaseConfig } from '../../env.js'
 
-const config = {
-  // apiKey: "FAKEKEYFAKEKEY",
-  // authDomain: "duckr.firebaseapp.com",
-  // databaseURL: "https://duckr.firebaseio.com",
-}
-
-firebase.initializeApp(config)
+firebase.initializeApp(firebaseConfig)
 
 export const ref = firebase.database().ref()
 export const firebaseAuth = firebase.auth
