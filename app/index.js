@@ -37,4 +37,5 @@ ReactDOM.render(
   <Provider store={store}>
     {getRoutes(checkAuth)}
   </Provider>,
-document.getElementById('app'))
+  document.getElementById('app')
+)

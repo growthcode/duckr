@@ -52,9 +52,9 @@ export function fetchAndHandleAuthedUser () {
       const userInfo = formatUserInfo(userData.displayName, userData.photoURL, user.uid)
       return dispatch(fetchingUserSuccess(user.uid, userInfo, Date.now()))
     })
-    .then(({user}) => saveUser(user))
-    .then((user) => dispatch(authUser(user.uid)))
-    .catch((error) => dispatch(fetchingUserFailure(error)))
+      .then(({user}) => saveUser(user))
+      .then((user) => dispatch(authUser(user.uid)))
+      .catch((error) => dispatch(fetchingUserFailure(error)))
   }
 }
 
@@ -67,7 +67,7 @@ export function logoutAndUnauth () {
 
 export function removeFetchingUser () {
   return {
-    type: REMOVE_FETCHING_USER
+    type: REMOVE_FETCHING_USER,
   }
 }
 

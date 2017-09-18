@@ -28,7 +28,7 @@ const MainContainer = React.createClass({
           this.context.router.replace('feed')
         }
       } else {
-         this.props.removeFetchingUser()
+        this.props.removeFetchingUser()
       }
     })
   },
@@ -36,11 +36,11 @@ const MainContainer = React.createClass({
     return this.props.isFetching === true
       ? null
       : <div className={container}>
-          <Navigation isAuthed={this.props.isAuthed} />
-          <div className={innerContainer}>
-            {this.props.children}
-          </div>
+        <Navigation isAuthed={this.props.isAuthed} />
+        <div className={innerContainer}>
+          {this.props.children}
         </div>
+      </div>
   },
 })
 
