@@ -26,8 +26,8 @@ const DuckDetailsContainer = React.createClass({
     } else {
       this.props.removeFetching()
     }
-
   },
+
   render () {
     return (
       <DuckDetails
@@ -35,7 +35,7 @@ const DuckDetailsContainer = React.createClass({
         duckId={this.props.duckId}
         error={this.props.error}
         isFetching={this.props.isFetching}
-        ndHandleReply={this.props.addAndHandleReply} />
+        addAndHandleReply={this.props.addAndHandleReply} />
     )
   },
 })
